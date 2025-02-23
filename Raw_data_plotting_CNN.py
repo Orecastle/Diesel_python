@@ -1,11 +1,7 @@
 from plotnine import ggplot, aes, geom_histogram, labs, geom_density, theme_bw
-import sys
-sys.path.append('D:\Python\Diesel\Diesel_python')
-from Data_loader import CNN_df
 
 from Data_loader import CNN_df
 
-CNN_df['is_same_substances?'] = CNN_df['is_same_substances?'].astype(str)
 
 print(CNN_df.info())
 
